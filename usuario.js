@@ -3,6 +3,8 @@ const usuario = {
   idade: 28
 };
 
+console.log(usuario);
+
 console.log(usuario.nome); // Saída: Carlos
 console.log(usuario['nome']); // Saída: Carlos (também)
 
@@ -15,6 +17,18 @@ usuario.cidade = "São Paulo";
 console.log(usuario.cidade);
 
 delete usuario.idade; // A chave 'idade' deixa de existir no objeto
+
+console.log(usuario); // Para provar a linha de cima
+
+const chaves = Object.keys(usuario);
+console.log(chaves);
+
+const valores = Object.values(usuario);
+console.log(valores);
+
+const entradas = Object.entries(usuario);
+console.log(entradas);
+
 
 /*• Object.keys(objeto): Devolve uma lista (array) com todas as chaves do objeto.
 • Object.values(objeto): Devolve uma lista (array) com todos os valores do objeto.
